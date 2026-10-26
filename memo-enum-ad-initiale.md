@@ -142,15 +142,3 @@ SYSTEM sur une machine jointe ≈ compte de domaine (usurpe le compte machine).
 | 464        | kpasswd                          |
 | 3268 / 3269| Global Catalog (LDAP / LDAPS)    |
 | 3389       | RDP                              |
-
----
-
-## 7. Checklist rapide
-
-- [ ] Écoute passive (Wireshark/tcpdump) → hôtes ARP/MDNS
-- [ ] Responder `-A` → hôtes supplémentaires
-- [ ] `fping -asgq` → liste d'IP vivantes → `hosts.txt`
-- [ ] `nmap -A -iL hosts.txt -oA` → services, OS, DC, legacy
-- [ ] Repérer le DC + hôtes critiques + OS obsolètes
-- [ ] Kerbrute userenum → liste d'utilisateurs valides
-- [ ] Tout noter + sauvegarder les fichiers de scan
