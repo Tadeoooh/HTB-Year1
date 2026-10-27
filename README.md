@@ -7,3 +7,4 @@ Notes.
 - [Empoisonnement LLMNR / NBT-NS depuis Windows (Inveigh)](memo-llmnr-nbtns-poisoning-windows.md)
 - [Password Spraying : vue d'ensemble & considérations](memo-password-spraying.md)
 - [Password Spraying interne depuis Linux](memo-password-spraying-interne-linux.md)
+- [Password Spraying interne depuis Windows (DomainPasswordSpray)](memo-password-spraying-interne-windows.md)
