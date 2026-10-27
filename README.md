@@ -8,3 +8,4 @@ Notes.
 - [Password Spraying : vue d'ensemble & considérations](memo-password-spraying.md)
 - [Password Spraying interne depuis Linux](memo-password-spraying-interne-linux.md)
 - [Password Spraying interne depuis Windows (DomainPasswordSpray)](memo-password-spraying-interne-windows.md)
+- [Énumération des contrôles de sécurité (Defender, AppLocker, CLM, LAPS)](memo-enum-security-controls.md)

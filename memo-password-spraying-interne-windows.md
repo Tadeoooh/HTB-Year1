@@ -48,6 +48,12 @@ Sortie (extraits) :
 > L'outil lit la policy, retire les **comptes désactivés** et ceux **à 1 essai du lockout**,
 > demande une **confirmation** avant de spray (`Are you sure... [Y]`), puis sort les hits dans `-OutFile`.
 
+> ⚠️ **Gotcha import (vu en lab)** : le script est dans **`C:\Tools`**, pas dans le dossier courant.
+> Depuis `C:\Windows\system32`, `Import-Module .\DomainPasswordSpray.ps1` échoue
+> (`no valid module file was found`). Solution : `cd C:\Tools` avant l'import, ou chemin complet
+> `Import-Module C:\Tools\DomainPasswordSpray.ps1`.
+> Si l'execution policy bloque : `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force`.
+
 > **Alternative** : **Kerbrute** permet de faire la même énumération + spray depuis Windows
 > (présent dans `C:\Tools` dans le lab). Cf. [mémo Linux](memo-password-spraying-interne-linux.md) pour la syntaxe.
 
