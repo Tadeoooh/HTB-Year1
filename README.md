@@ -10,3 +10,4 @@ Notes.
 - [Password Spraying interne depuis Windows (DomainPasswordSpray)](memo-password-spraying-interne-windows.md)
 - [Énumération des contrôles de sécurité (Defender, AppLocker, CLM, LAPS)](memo-enum-security-controls.md)
 - [Énumération credentialed depuis Linux (CME, SMBMap, rpcclient, Impacket, Windapsearch, BloodHound.py)](memo-enum-credentialed-linux.md)
+- [Énumération credentialed depuis Windows (AD PowerShell, PowerView, SharpView, Snaffler, SharpHound/BloodHound)](memo-enum-credentialed-windows.md)
