@@ -98,5 +98,3 @@ SQL01.INLANEFREIGHT.LOCAL   9G#f;p41dcAe,s 09/26/2020 00:30:09
 | LAPS — qui peut lire     | `Find-LAPSDelegatedGroups` / `Find-AdmPwdExtendedRights`   | groupes délégués / All Ext. Rights  |
 | LAPS — mdp en clair      | `Get-LAPSComputers`                                        | colonne `Password`                  |
 | Outil LAPS              | **LAPSToolkit**                                             | —                                   |
-
-> Étape suivante : poursuivre l'**énumération credentialed** du domaine `INLANEFREIGHT.LOCAL`.

@@ -119,5 +119,3 @@ Snaffler.exe -s -d inlanefreight.local -o snaffler.log -v data
 | Collecte BloodHound (Windows) | **SharpHound** `-c All --zipfilename <nom>` → GUI (neo4j) |
 | Requête star | `Find Shortest Paths To Domain Admins` |
 | Cheat sheet syntaxe | **WADComs** |
-
-> Suite : enquêter en **Living Off The Land** quand on ne peut pas importer d'outils (shell restreint, hôte managé sans Internet).
