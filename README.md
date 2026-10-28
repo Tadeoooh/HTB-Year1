@@ -17,3 +17,4 @@ Notes.
 - [ACL Abuse (primer : ACL/ACE, DACL/SACL, droits abusables)](memo-acl-abuse-primer.md)
 - [Énumération des ACL (PowerView ciblé, ResolveGUIDs, BloodHound, chaîne wley→DCSync)](memo-acl-enumeration.md)
 - [ACL Abuse Tactics (PSCredential, Set-DomainUserPassword, targeted Kerberoast, cleanup, Event 5136)](memo-acl-abuse-tactics.md)
+- [DCSync (secretsdump.py -just-dc, Mimikatz lsadump::dcsync, reversible encryption, droits de réplication)](memo-dcsync.md)
