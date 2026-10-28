@@ -12,3 +12,4 @@ Notes.
 - [Énumération credentialed depuis Linux (CME, SMBMap, rpcclient, Impacket, Windapsearch, BloodHound.py)](memo-enum-credentialed-linux.md)
 - [Énumération credentialed depuis Windows (AD PowerShell, PowerView, SharpView, Snaffler, SharpHound/BloodHound)](memo-enum-credentialed-windows.md)
 - [Living Off the Land (outils natifs : PowerShell, WMI, net, dsquery, filtres LDAP)](memo-living-off-the-land.md)
+- [Kerberoasting depuis Linux (GetUserSPNs.py, Hashcat -m 13100)](memo-kerberoasting-linux.md)
