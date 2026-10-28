@@ -15,3 +15,4 @@ Notes.
 - [Kerberoasting depuis Linux (GetUserSPNs.py, Hashcat -m 13100)](memo-kerberoasting-linux.md)
 - [Kerberoasting depuis Windows (setspn/Mimikatz, PowerView, Rubeus, etypes RC4/AES)](memo-kerberoasting-windows.md)
 - [ACL Abuse (primer : ACL/ACE, DACL/SACL, droits abusables)](memo-acl-abuse-primer.md)
+- [Énumération des ACL (PowerView ciblé, ResolveGUIDs, BloodHound, chaîne wley→DCSync)](memo-acl-enumeration.md)
