@@ -18,3 +18,4 @@ Notes.
 - [Énumération des ACL (PowerView ciblé, ResolveGUIDs, BloodHound, chaîne wley→DCSync)](memo-acl-enumeration.md)
 - [ACL Abuse Tactics (PSCredential, Set-DomainUserPassword, targeted Kerberoast, cleanup, Event 5136)](memo-acl-abuse-tactics.md)
 - [DCSync (secretsdump.py -just-dc, Mimikatz lsadump::dcsync, reversible encryption, droits de réplication)](memo-dcsync.md)
+- [Privileged Access (RDP / WinRM / MSSQL : CanRDP, evil-winrm, PowerUpSQL, mssqlclient.py, xp_cmdshell)](memo-privileged-access.md)
