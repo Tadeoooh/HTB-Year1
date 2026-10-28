@@ -39,6 +39,18 @@ Get-DomainObjectACL -ResolveGUIDs -Identity * | ? {$_.SecurityIdentifier -eq $si
 > # → Name : User-Force-Change-Password
 > ```
 
+### Correspondance ObjectAceType ↔ droit abusable
+Le champ `ObjectAceType` (une fois `-ResolveGUIDs` passé) donne le **nom** de l'extended right, qui ne matche pas toujours le nom « parlé » du droit :
+
+| `ObjectAceType` (sortie PowerView) | Droit / abus |
+|---|---|
+| `User-Force-Change-Password` | **ForceChangePassword** → reset mdp (`Set-DomainUserPassword`) |
+| `Self-Membership` | **AddSelf** → s'auto-ajouter à un groupe (`Add-DomainGroupMember`) |
+| `DS-Replication-Get-Changes` (+ `-In-Filtered-Set`) | droits **DCSync** |
+| *(vide / `All`)* | droit générique : `GenericAll`, `GenericWrite`, `WriteDacl`... lu dans `ActiveDirectoryRights` |
+
+> ⚠️ Piège lab : la question « ObjectAceType, format **Word-Word** » attend `Self-Membership` (= AddSelf), **pas** `User-Force-Change-Password` (4 mots).
+
 ---
 
 ## 3. Méthode 100 % native (Get-Acl + Get-ADUser)
