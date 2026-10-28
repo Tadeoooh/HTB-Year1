@@ -16,3 +16,4 @@ Notes.
 - [Kerberoasting depuis Windows (setspn/Mimikatz, PowerView, Rubeus, etypes RC4/AES)](memo-kerberoasting-windows.md)
 - [ACL Abuse (primer : ACL/ACE, DACL/SACL, droits abusables)](memo-acl-abuse-primer.md)
 - [Énumération des ACL (PowerView ciblé, ResolveGUIDs, BloodHound, chaîne wley→DCSync)](memo-acl-enumeration.md)
+- [ACL Abuse Tactics (PSCredential, Set-DomainUserPassword, targeted Kerberoast, cleanup, Event 5136)](memo-acl-abuse-tactics.md)
