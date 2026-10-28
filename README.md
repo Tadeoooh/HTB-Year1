@@ -20,3 +20,4 @@ Notes.
 - [DCSync (secretsdump.py -just-dc, Mimikatz lsadump::dcsync, reversible encryption, droits de réplication)](memo-dcsync.md)
 - [Privileged Access (RDP / WinRM / MSSQL : CanRDP, evil-winrm, PowerUpSQL, mssqlclient.py, xp_cmdshell)](memo-privileged-access.md)
 - [Kerberos Double Hop (TGS vs TGT, PSCredential, Register-PSSessionConfiguration)](memo-kerberos-double-hop.md)
+- [Bleeding Edge Vulns (NoPac/SamAccountName, PrintNightmare, PetitPotam + AD CS relay)](memo-bleeding-edge-vulns.md)
