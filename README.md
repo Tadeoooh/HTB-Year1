@@ -24,3 +24,4 @@ Notes.
 - [Miscellaneous Misconfigurations (Exchange, PrivExchange, Printer Bug, MS14-068, GPP cpassword, ASREPRoast, GPO Abuse)](memo-misc-misconfigurations.md)
 - [Domain Trusts (primer : types parent-child/external/forest, transitivité, direction, Get-ADTrust/Get-DomainTrust, netdom, BloodHound)](memo-domain-trusts-primer.md)
 - [Trust Child → Parent depuis Windows (ExtraSids / SID History, Golden Ticket Mimikatz & Rubeus, DCSync parent)](memo-trust-child-parent-windows.md)
+- [Trust Child → Parent depuis Linux (Impacket : secretsdump, lookupsid, ticketer.py + ccache, psexec.py, raiseChild.py)](memo-trust-child-parent-linux.md)
