@@ -22,3 +22,4 @@ Notes.
 - [Kerberos Double Hop (TGS vs TGT, PSCredential, Register-PSSessionConfiguration)](memo-kerberos-double-hop.md)
 - [Bleeding Edge Vulns (NoPac/SamAccountName, PrintNightmare, PetitPotam + AD CS relay)](memo-bleeding-edge-vulns.md)
 - [Miscellaneous Misconfigurations (Exchange, PrivExchange, Printer Bug, MS14-068, GPP cpassword, ASREPRoast, GPO Abuse)](memo-misc-misconfigurations.md)
+- [Domain Trusts (primer : types parent-child/external/forest, transitivité, direction, Get-ADTrust/Get-DomainTrust, netdom, BloodHound)](memo-domain-trusts-primer.md)
