@@ -25,3 +25,4 @@ Notes.
 - [Domain Trusts (primer : types parent-child/external/forest, transitivité, direction, Get-ADTrust/Get-DomainTrust, netdom, BloodHound)](memo-domain-trusts-primer.md)
 - [Trust Child → Parent depuis Windows (ExtraSids / SID History, Golden Ticket Mimikatz & Rubeus, DCSync parent)](memo-trust-child-parent-windows.md)
 - [Trust Child → Parent depuis Linux (Impacket : secretsdump, lookupsid, ticketer.py + ccache, psexec.py, raiseChild.py)](memo-trust-child-parent-linux.md)
+- [Trust Cross-Forest depuis Windows (Kerberoast cross-trust Rubeus, password re-use, foreign group membership, SID History)](memo-trust-cross-forest-windows.md)
